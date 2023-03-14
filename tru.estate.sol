@@ -1,22 +1,3 @@
-/**
- *Submitted for verification at polygonscan.com on 2023-03-09
-*/
-
-/**
- *Submitted for verification at polygonscan.com on 2023-02-27
-*/
-
-/**
- *Submitted for verification at polygonscan.com on 2023-02-16
-*/
-
-/**
- *Submitted for verification at polygonscan.com on 2022-12-29
-*/
-
-/**
- *Submitted for verification at polygonscan.com on 2022-11-18
-*/
 
 // SPDX-License-Identifier: MIT
 
