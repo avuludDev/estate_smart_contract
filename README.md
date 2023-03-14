@@ -10,7 +10,11 @@ To get started with the Truestate contract, you'll need to have a working Ethere
 
 ## Usage
 
-Once the Truestate contract is deployed, you can use the following functions to create and manage individual projects:
+Once the Truestate and TruEstateObject contracts are deployed, users can use them to create and trade real estate assets on the Ethereum blockchain. The Truestate contract allows users to create new TruEstateObject contracts representing individual real estate assets, while also providing functionality for managing and trading these assets.
+
+Users can interact with the Truestate and TruEstateObject contracts using any Ethereum wallet or dApp that supports smart contract interactions. The specific methods and parameters for interacting with the contracts will depend on the interface being used, but will generally involve calling specific functions on the contracts and passing in relevant parameters.
+
+For more information on using the Truestate and TruEstateObject contracts, please refer to the documentation and examples provided in the `Truestate.sol` and `TruEstateObject.sol` files. You can use the following functions to create and manage individual projects:
 
 ### `createProject(uint256 _supply)`
 
@@ -105,7 +109,19 @@ The `TruEstateObject` token contract emits the following event:
 
 ## Deployment
 
-The `TruEstateObject` token contract has been deployed on the Ethereum Mainnet.
+To deploy the Truestate and TruEstateObject contracts in Remix, follow these steps:
+
+1.  Open Remix and create a new Solidity file.
+2.  Copy and paste the contents of the `Truestate.sol` file into the new file.
+3.  Compile the contract by clicking the Solidity compiler icon in the left sidebar, then selecting the appropriate compiler version and clicking "Compile Truestate.sol".
+4.  Deploy the contract by clicking the "Deploy & Run Transactions" icon in the left sidebar, then selecting "Truestate" as the contract to deploy and selecting your preferred Ethereum network (e.g. Mainnet, Rinkeby, etc.).
+5.  Set the constructor parameters for the Truestate contract by filling in the values for `feePercentage` and `owner`. These can be set to any values you prefer.
+6.  Click "Deploy" to deploy the Truestate contract.
+7.  Copy the address of the deployed Truestate contract.
+8.  Repeat steps 2-6 for the `TruEstateObject.sol` contract, using the address of the deployed Truestate contract as the constructor parameter for the `truestateContract` parameter.
+9.  Once both contracts are deployed, you can interact with them using the Remix interface.
+
+Note that deploying contracts on a live Ethereum network can incur transaction fees, so be sure to have sufficient funds in your Ethereum wallet to cover these costs.
 
 ## Authors
 
